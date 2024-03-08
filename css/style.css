@@ -77,7 +77,7 @@ body {
    z-index: 3;
    background-color: #fff;
 
-   background-image: url('../img/zip1.png'),url('../img/zip2.png');
+   background-image: url("../img/zip1.png"), url("../img/zip2.png");
    background-repeat: no-repeat;
    background-position: left, right;
    background-size: auto auto, auto auto;
@@ -137,6 +137,7 @@ body {
 
 .button {
    text-align: center;
+   margin-bottom: 15px;
 }
 .btn {
    width: 90%;
@@ -160,6 +161,80 @@ body {
    font-weight: 700;
    font-size: 16px;
    text-align: center;
+}
+
+.paper {
+   background-color: #fff;
+   position: relative;
+   z-index: 2;
+   padding: 100px 0;
+   background-image: url("../img/paper.png");
+
+   background-image: url('../img/paper_zip2.png'), url('../img/paper_zip1.png'),url('../img/paper.png');
+   background-repeat: no-repeat;
+   background-position: right, left, 50%;
+   background-size: auto auto, auto auto, cover;
+   
+}
+
+
+.paper_body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+   justify-content: center;
+}
+
+.paper_top {
+   color: #fff;
+   display: flex;
+   column-gap: 40px;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 45px;
+}
+.paper_item img {
+  margin-bottom: 5px;
+}
+.item_text {
+   font-weight: 400;
+   font-size: 10px;
+   text-transform: uppercase;
+   text-align: center;
+}
+
+.paper_text {
+   font-weight: 600;
+   font-size: 19px;
+   text-transform: uppercase;
+   text-align: center;
+   color: #fff;
+   line-height: 1.2;
+}
+
+.capsule {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+
+.capsule_img {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.result {
+  position: relative;
+  z-index: 2;
+  background-color: #fff;
+}
+.result_list li {
+  font-weight: 400;
+font-size: 16px;
+color: #000;
 }
 
 @media (max-width: 600px) {
